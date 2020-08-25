@@ -1,4 +1,13 @@
 
+// Get current Date
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+
+// Planner input handlers 
 document.getElementById("6button").addEventListener('click', function(event) { 
     event.preventDefault();
     console.log("Ive been clicked")
