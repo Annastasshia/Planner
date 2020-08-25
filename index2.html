@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./script.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,7 +19,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    
+    
+  
     <title>Work Day Scheduler</title>
   </head>
 
@@ -42,6 +45,7 @@
       <p id="currentDay" class="lead"></p>
     </header>
    
+    <!-- Start Planner -->
     <body>
         <div class="plannerData" style="width: 100%; height: 495px; left: 10px; top: 105px;">
             <table class="table table-bordered table-responsive-md table-striped text-center">
@@ -51,127 +55,233 @@
                     <th class="text-center">Save</th>
                 </thead>
                 <tbody>
+
+                    <!-- 6:00 am -->
                     <tr>
                          <td class="pt-3-half" contenteditable="false" aria-label="06:00" style="height: 80px; width: 50px;">6:00 AM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                            <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="6amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "6am"></td>
+                        <td>
+                            <button id="6button">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 7:00 am -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="07:00" style="height: 80px; width: 50px;">7:00 AM</td>
-                       <td type=input class="pt-3-half" contenteditable="true"></td>
-                       <td class="pt-3-half">
-                           <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
-                       </td>
+                        <td> 
+                            <div id="7amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "7am"></td>
+                        <td>
+                            <button id="7button">​Save</button>
+                        </td>
+                    </form>
                    </tr>
+
+                   <!-- 8:00 am -->
                    <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="08:00" style="height: 80px; width: 50px;">8:00 AM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                       <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="8amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "8am"></td>
+                        <td>
+                            <button id="8button">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 9:00 am -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="09:00" style="height: 80px; width: 50px;">9:00 AM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="9amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "9am"></td>
+                        <td>
+                            <button id="9button">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 10:00 am -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="10:00" style="height: 80px; width: 50px;">10:00 AM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="10amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "10am"></td>
+                        <td>
+                            <button id="10button">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 11:00 am -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="11:00" style="height: 80px; width: 50px;">11:00 AM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="11amAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "11am"></td>
+                        <td>
+                            <button id="11button">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 12:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="12:00" style="height: 80px; width: 50px;">12:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="12pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "12pm"></td>
+                        <td>
+                            <button id="12pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 1:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="01:00" style="height: 80px; width: 50px;">1:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="1pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "1pm"></td>
+                        <td>
+                            <button id="1pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 2:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="02:00" style="height: 80px; width: 50px;">2:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="2pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "2pm"></td>
+                        <td>
+                            <button id="2pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 3:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="03:00" style="height: 80px; width: 50px;">3:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="3pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "3pm"></td>
+                        <td>
+                            <button id="3pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 4:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="04:00" style="height: 80px; width: 50px;">4:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="4pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "4pm"></td>
+                        <td>
+                            <button id="4pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 5:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="05:00" style="height: 80px; width: 50px;">5:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="5pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "5pm"></td>
+                        <td>
+                            <button id="5pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 6:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="06:00" style="height: 80px; width: 50px;">6:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="6pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "6pm"></td>
+                        <td>
+                            <button id="6pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 7:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="07:00" style="height: 80px; width: 50px;">7:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="7pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "7pm"></td>
+                        <td>
+                            <button id="7pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 8:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="08:00" style="height: 80px; width: 50px;">8:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="8pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "8pm"></td>
+                        <td>
+                            <button id="8pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 9:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="09:00" style="height: 80px; width: 50px;">9:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="9pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "9pm"></td>
+                        <td>
+                            <button id="9pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
+
+                    <!-- 10:00 pm -->
                     <tr>
                         <td class="pt-3-half" contenteditable="false" aria-label="10:00" style="height: 80px; width: 50px;">10:00 PM</td>
-                        <td type=input class="pt-3-half" contenteditable="true"></td>
-                        <td class="pt-3-half">
-                        <span class="Save"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                        <td> 
+                            <div id="10pmAdd" style="float: left;;"></div>
+                            <form>
+                            <input type="text" placeholder=" . . . type here" style="width: 100%;" id= "10pm"></td>
+                        <td>
+                            <button id="10pbutton">​Save</button>
                         </td>
+                    </form>
                     </tr>
                 </tbody>
                 
             </table>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./script.js"></script>
     </body>
+</html>
