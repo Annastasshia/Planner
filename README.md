@@ -25,3 +25,11 @@
 Open the HTML file on your default server
 
 ### 🏠 [Homepage]
+
+## Author
+
+👤 **Annastasshia Ames
+
+* Website:  https://annastasshia.github.io/Planner/
+* Repository: https://github.com/Annastasshia/Planner
+* Github: [@Annastasshia](https://github.com/Annastasshia)
